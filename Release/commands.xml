@@ -1,0 +1,14 @@
+<!--  This is an example, please modify this to suit your requirements.  -->
+<commands>
+  <command>
+    <executable>Package1Setup.exe</executable>
+    <arguments>/exenoui /exelog C:\AppDeploymentLogs\CWRDSS.log</arguments>
+    <delayInSeconds>5</delayInSeconds>
+    <!--  Specify the delay (duration in seconds) before executing the next command  -->
+  </command>
+  <command>
+    <executable>msiexec.exe</executable>
+    <arguments>/i 7z2301-x64.msi /qn /log C:\AppDeploymentLogs\7zipInstall.log</arguments>
+    <delayInSeconds>0</delayInSeconds>
+  </command>
+</commands>
